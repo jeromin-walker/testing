@@ -27,5 +27,3 @@ OPTIONS:
   -verbose
         Verbose output
 ```
-
-
