@@ -1,10 +1,6 @@
 os: linux
 arch: amd64
 rvm: 2.6.3
-notifications:
-  slack: clicktechlabs:4PjxTk7fLfd8Ey9wbxRLvYgc
-  template:
-    - <https://testserver/?sha=$TRAVIS_COMMIT%7CTry on Staging>
 env:
   global:
     - SHA=$TRAVIS_COMMIT
@@ -12,5 +8,3 @@ jobs:
   include:
     - stage: "echo SHA"
       script: echo $SHA
-    - stage: "echo $TRAVIS_COMMIT"
-      script: echo $TRAVIS_COMMIT
